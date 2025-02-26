@@ -1,0 +1,53 @@
+﻿<html>
+    <title>Section 1 - Exercise</title>
+
+    @{
+        Layout=null;
+    }
+
+    <body>
+        <center>
+            <br />
+            <h1>Section1</h1>
+            <br />
+
+            @{
+                var message="Hello World";
+            }
+
+            <h2>1. Razor Syntax uses @@ sign</h2>
+            <p>Welcome Message : @message</p>
+            <br />
+
+            <h2>2. Variables</h2>
+
+            @{
+                var count = 2;
+                int number = 100;
+                double doublevalue = 9.99;
+                bool boolValue = true;
+	            DateTime today = DateTime.Now;
+            }
+
+            <p>Count : @count</p>
+            <p>Number : @number</p>
+            <p>Double Value : @doublevalue</p>
+            <p>Boolean : @boolValue</p>
+            <p>Date and Time Now : @today</p>
+            <br />
+
+            <h2>3. Type Conversion</h2>
+
+            @{
+                var currentValue = "45";
+                var afterConversion=currentValue.AsInt();
+            }
+
+            <p>Before type conversion : @currentValue.GetType()</p>
+            <p>After type conversion : @afterConversion.GetType()</p>
+
+        </center>
+    </body>
+</html>
+
+

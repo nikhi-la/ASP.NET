@@ -1,0 +1,53 @@
+﻿<html>
+    <title>Section 2 - Exercise</title>
+
+    @{
+        Layout=null;
+    }
+
+    <body>
+        <center>
+
+            <br />
+            <h1>Section 2</h1>
+            <br />
+
+            <h2>1. Code Expression</h2>
+            @{
+                var college="MACE";
+            }
+
+            <h3>Implicit Code Expression</h3>
+            <p>
+                Your College : @college
+            </p>
+
+            <h3>Explicit Code Expression</h3>
+            <p>
+                Sum of 5 and 3 : @(5 + 3)
+            </p>
+            <p>
+                Your Name : @("John" + " " + "Doe")
+            </p>
+            <br />
+
+
+            <h2>2. Razor Code Block</h2>
+            <h3>Implicit Transition</h3>
+            @{
+                 var name = "ABC";
+                <p>
+                    Your Name : @name
+                </p>
+
+            }
+            <h3>Explicit Transition</h3>
+            @for (var i = 0; i < 5; i++)
+            {
+                <text>i=@i</text>
+                <br />
+            }
+        </center>
+    </body>
+</html>
+
