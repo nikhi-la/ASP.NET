@@ -1,0 +1,24 @@
+
+How to create Razor Project
+
+1.  Open Microsoft Visual studio
+2.  Create a new project
+3.  ASP.NET web Application (.NET Framework)
+4.  Click on Next
+5.  Give project name and create
+6.  Choose MVC, click create
+
+	-->Run default index page
+
+7.  Right click on controllers and click Add
+8.  Select controller
+9.  Select MVC 5 Controller-Empty and click add
+10. Give controller name, Click add
+
+	--> Created SectionController.cs and inside Views, created Section folder.
+
+11. Right click on Section folder and click Add
+12. Select view, select MVC 5 View and click add
+13. Give View name and click Add
+
+14. Paste the code inside section.cshtml
